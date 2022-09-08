@@ -1,5 +1,4 @@
-﻿using HospitalDBervice;
-using HospitalDBService;
+﻿using HospitalDbService.Core.Models;
 
 namespace HospitalDbService.Core.Interfaces.IService
 {

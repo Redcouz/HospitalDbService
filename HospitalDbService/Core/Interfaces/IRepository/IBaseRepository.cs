@@ -1,4 +1,4 @@
-﻿using HospitalDbService.Models;
+﻿using HospitalDbService.Core.Models;
 
 namespace HospitalDbService.Core.Interfaces.IRepository
 {

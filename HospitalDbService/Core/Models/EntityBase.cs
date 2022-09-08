@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.CompilerServices;
 
-namespace HospitalDbService.Models
+namespace HospitalDbService.Core.Models
 {
-  public class EntityBase
+  public abstract class EntityBase 
   {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -1,4 +1,4 @@
-﻿@model HospitalDBervice.DoctorModel
+﻿@model HospitalDbService.Core.Models.DoctorModel
 
 @{
     ViewData["Title"] = "Create";
@@ -33,7 +33,7 @@
                 <span asp-validation-for="CreatedAt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" asp-action="Post" />
+                <input type="submit" value="Create" class="btn btn-primary" asp-action="PostDoctor" />
             </div>
         </form>
     </div>

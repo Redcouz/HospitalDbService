@@ -1,9 +1,6 @@
 ﻿using HospitalDbService.Core.Models;
-using HospitalDbService.Models;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HospitalDBervice
+namespace HospitalDbService.Core.Models
 {
   public class DoctorModel : PersonModel
   {

@@ -1,6 +1,4 @@
-﻿using HospitalDbService.Models;
-
-namespace HospitalDbService.Core.Models
+﻿namespace HospitalDbService.Core.Models
 {
   public class PersonModel : EntityBase
   {

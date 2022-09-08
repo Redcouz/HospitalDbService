@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using HospitalDBService;
-using HospitalDbService.Infraestructure.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using HospitalDbService.Core.Models;
 using HospitalDbService.Core.Interfaces.IService;
 
 namespace HospitalDbService.Controllers
@@ -50,8 +43,6 @@ namespace HospitalDbService.Controllers
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> PostPatient([FromForm] PatientModel PatientModel)
     {
-      if (!ModelState.IsValid)
-        return BadRequest();
       try
       {
         await _iPatientService.Post(PatientModel);

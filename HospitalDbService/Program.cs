@@ -5,10 +5,7 @@ using HospitalDbService.Core.Services;
 using HospitalDbService.Infraestructure;
 using HospitalDbService.Infraestructure.Data;
 using HospitalDbService.Infraestructure.Repositories;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,11 +26,11 @@ builder.Services.AddTransient<IConsultService, ConsultService>();
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-  var context = scope.ServiceProvider.GetRequiredService<HospitalDbContext>();
-  context.Database.Migrate();
-}
+//using (var scope = app.Services.CreateScope())
+//{
+//  var context = scope.ServiceProvider.GetRequiredService<HospitalDbContext>();
+//  context.Database.Migrate();
+//}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

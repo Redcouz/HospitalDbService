@@ -1,8 +1,5 @@
-﻿using HospitalDBervice;
-using HospitalDBService;
+﻿using HospitalDbService.Core.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
-using System.Xml;
 
 namespace HospitalDbService.Infraestructure.Data
 {

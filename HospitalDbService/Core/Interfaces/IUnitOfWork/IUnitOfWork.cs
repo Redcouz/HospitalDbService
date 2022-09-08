@@ -1,6 +1,5 @@
-﻿using HospitalDBervice;
-using HospitalDbService.Core.Interfaces.IRepository;
-using HospitalDBService;
+﻿using HospitalDbService.Core.Interfaces.IRepository;
+using HospitalDbService.Core.Models;
 
 namespace HospitalDbService.Core.Interfaces.IUnitOfWork
 {

@@ -1,7 +1,6 @@
 ﻿using HospitalDbService.Core.Interfaces.IRepository;
 using HospitalDbService.Infraestructure.Data;
-using HospitalDbService.Models;
-using HospitalDBService;
+using HospitalDbService.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace HospitalDbService.Infraestructure.Repositories
